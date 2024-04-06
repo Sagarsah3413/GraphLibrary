@@ -1,4 +1,3 @@
-
 # GraphLibrary
 
 GraphLibrary is a versatile C++ library designed for graph representation and manipulation. It supports both directed and undirected graphs, with the option for weighted edges. The library offers a range of functionalities including cycle detection, topological sorting, finding strongly connected components, minimum spanning tree construction, and more.
@@ -25,16 +24,8 @@ To use GraphLibrary, include GraphLibrary.h in your project directory. Ensure yo
 ```cpp
   #include "GraphLibrary.h"
 ```
+
 No additional libraries are required for the core functionality.
-    
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
-
 
 ## Usage/Examples
 
@@ -44,7 +35,9 @@ Creating a Graph
 // Create a directed, weighted graph with 5 vertices
 Graph myGraph(5, true, true);
 ```
+
 Adding Edges and Vertices
+
 ```cpp
 // Adding a directed edge with a weight
 myGraph.addDirectedEdge(0, 1, 10);
@@ -56,7 +49,9 @@ myGraph.addUndirectedEdge(2, 3);
 myGraph.addVertexName(0, "A");
 myGraph.addVertexName(1, "B");
 ```
+
 Utility Methods
+
 ```cpp
 // Check if the graph contains a cycle
 bool hasCycle = myGraph.isCyclic();
@@ -67,7 +62,9 @@ auto sccs = myGraph.getStronglyConnectedComponents();
 // Print graph
 myGraph.printGraph();
 ```
+
 Serialization and Deserialization
+
 ```cpp
 // Save graph to file
 myGraph.saveToFile("myGraph.txt");
@@ -79,6 +76,7 @@ loadedGraph.loadFromFile("myGraph.txt");
 ```
 
 Finding the Shortest Path
+
 ```cpp
 // Find shortest paths from vertex 0 using Dijkstra's algorithm
 std::vector<int> distances = g.dijkstra(0);
@@ -90,13 +88,12 @@ for (size_t i = 0; i < distances.size(); i++) {
 
 ```
 
-
 ## Contributing
 
 Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 Please ensure to update tests as appropriate.
+
 ## Support
 
-For support, email sahs82341@gmail.com 
-
+For support, email sahs82341@gmail.com

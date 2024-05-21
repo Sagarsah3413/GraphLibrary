@@ -88,11 +88,11 @@ public:
     }
 
     // Add undirected edge from u to v with Default Weight 1
-    void addUndirectedEdge(int u, int v)
-    {
-        adj[u].push_back(v);
-        adj[v].push_back(u);
-    }
+    // void addUndirectedEdge(int u, int v)
+    // {
+    //     adj[u].push_back(v);
+    //     adj[v].push_back(u);
+    // }
 
     // Add undirected edge between u and v
     void addUndirectedEdge(int u, int v, int w = 1)

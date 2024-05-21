@@ -10,6 +10,7 @@
 #include <limits>
 #include <algorithm>
 #include <fstream>
+#include<string>
 
 class Graph
 {
@@ -72,10 +73,10 @@ public:
     }
 
     // Add directed edge from u to v with Default Weight 1
-    void addDirectedEdge(int u, int v)
-    {
-        adj[u].push_back(v);
-    }
+    // void addDirectedEdge(int u, int v)
+    // {
+    //     adj[u].push_back(v);
+    // }
 
     // Add directed edge from u to v
     void addDirectedEdge(int u, int v, int w = 1)
